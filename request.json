@@ -1,0 +1,18 @@
+{
+  data: {
+      handle: "deb_baC0LUTVW9lzYA284",
+      schema: "debit",
+      source: "account:1234@bank1.com",
+      symbol: "usd",
+      amount: 100,
+      intent: {
+          "hash": " ... ",
+          "data": { ... },
+          meta: {
+              status: "pending",
+              thread: "YJxAMz52rMPiNYOZV",
+              signatures: [ ... ]
+          }
+      }
+  }
+}

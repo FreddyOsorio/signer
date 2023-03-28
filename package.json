@@ -1,0 +1,30 @@
+{
+  "name": "tel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate:key": "node generateKey.js",
+    "generate:signer": "node generateSigner.js",
+    "generate:bridge": "node generateBridge.js",
+    "generate:intent": "node generateIntentsIssuePrueba.js",
+    "generate:destroy": "node generateIntentsDestroy.js",
+    "generate:wallet": "node generateWallet.js",
+    "generate:debit-prepare": "node generateDebitsPrepare.js",
+    "generate:rechazo": "node generateIntentsDestroyRechazo.js",
+    "generate:transferinterno": "node generateTransferInterno.js",
+    "generate:preparecredit": "node generatePrepareCredit.js",
+    "generate:preparedc": "node generatePreparedC.js",
+    "generate:bridge-ax": "node generateBridgeSdk.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "nodemon": "^2.0.20",
+    "safe-stable-stringify": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.13.0"
+  }
+}

@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "e5403f0e-7946-4cf5-9253-7e8bdf9ff25a",
+		"name": "Transferencias en linea",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7782887"
+	},
+	"item": [
+		{
+			"name": "Signer",
+			"item": [
+				{
+					"name": "create a signer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"hash\": \"4969e3c012b66d88cec597bf337fc01eab8d651e6ed2d5c40236cc1f7d93435a\",\r\n  \"meta\": {\r\n    \"signatures\": [\r\n      {\r\n        \"schema\": \"ed25519\",\r\n        \"digest\": \"4969e3c012b66d88cec597bf337fc01eab8d651e6ed2d5c40236cc1f7d93435a\",\r\n        \"public\": \"WAweF9PHlboQoW0z8NqhZXFmzUTaV74NRFAd/aILprE=\",\r\n        \"result\": \"0G2gvSfBx6MwPT8ShBaiYx7zwa5Kqc4Cq3S3NXV1m5/ZPozoH/SUouuhi9sQU+f0yo0eX4ygH7PzE3PAdlxsCQ==\",\r\n        \"custom\": {\r\n          \"type\": \"PERSON\",\r\n          \"reference\": 3284759238475\r\n        }\r\n      }\r\n    ],\r\n    \"moment\": \"2019-08-24T14:15:22Z\"\r\n  },\r\n  \"data\": {\r\n    \"handle\": \"bog\",\r\n    \"parent\": \"4969e3c012b66d88cec597bf337fc01eab8d651e6ed2d5c40236cc1f7d93435a\",\r\n    \"access\": {\r\n      \"owners\": [\r\n        \"WAweF9PHlboQoW0z8NqhZXFmzUTaV74NRFAd/aILprE=\"\r\n      ]\r\n    },\r\n    \"custom\": {\r\n      \"type\": \"PERSON\",\r\n      \"reference\": 3284759238475\r\n    },\r\n    \"public\": \"WAweF9PHlboQoW0z8NqhZXFmzUTaV74NRFAd/aILprE=\",\r\n    \"schema\": \"ed25519\",\r\n    \"secret\": \"MIGbMFcGCSqGSIb3DQEFDTBKMCkGCSqGSIb3DQEFDDAcBAgRkLIat0HLagICCAAwDAYIKoZIhvcNAgkFADAdBglghkgBZQMEASoEELt1Miyg5QxGQm0Z3MGf5JAEQKDlo5kbktuZu+RA6L59rW3Dlr6PADSoyL3EKnPt+iKrDIuA5IUzKiv05HeQdD3zWY2j/wff3Z5LOhzFLshyHfA=\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cardnet.ldg-stg.one/api/signers",
+							"protocol": "https",
+							"host": [
+								"cardnet",
+								"ldg-stg",
+								"one"
+							],
+							"path": [
+								"api",
+								"signers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List signers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ledger",
+			"item": [
+				{
+					"name": "Listar ledgers",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"hash\": \"319ad481cdf3ebb9ba512aae2780acb814af725423f3cf65cc50fa2d8c26ad32\",\r\n  \"data\": {\r\n    \"handle\": \"bank:qikMauricio\",\r\n    \"access\": [\r\n      {\r\n        \"action\": \"any\",\r\n        \"signer\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\"\r\n      },\r\n      {\r\n        \"action\": \"any\",\r\n        \"bearer\": {\r\n          \"sub\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"meta\": {\r\n    \"signatures\": [\r\n      {\r\n        \"schema\": \"ed25519\",\r\n        \"public\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\",\r\n        \"digest\": \"319ad481cdf3ebb9ba512aae2780acb814af725423f3cf65cc50fa2d8c26ad32\",\r\n        \"result\": \"4bQTIIIcGF8//OHEt7GOJvQY0Omq8OQDZToMuhExoacqXOBI6fxucB7VOSahaGAlPTfncaMYerzuctZct3UGBQ==\"\r\n      }\r\n    ]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cardnet.ldg-stg.one/api/wallets",
+							"protocol": "https",
+							"host": [
+								"cardnet",
+								"ldg-stg",
+								"one"
+							],
+							"path": [
+								"api",
+								"wallets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"hash\": \"a961354a7d05c8138e6c88aed90475bcfe9aeeb2ed4dfa76fd2e2d5c4d6e4fe6\",\r\n  \"data\": {\r\n    \"handle\": \"bank:qik2\",\r\n    \"access\": [\r\n      {\r\n        \"action\": \"any\",\r\n        \"signer\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\"\r\n      },\r\n      {\r\n        \"action\": \"any\",\r\n        \"bearer\": {\r\n          \"sub\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"meta\": {\r\n    \"signatures\": [\r\n      {\r\n        \"schema\": \"ed25519\",\r\n        \"public\": \"FAXXzTVtDy96B9TebHrht/LGNVE/lRj7AdpRXl5BTuk=\",\r\n        \"digest\": \"a961354a7d05c8138e6c88aed90475bcfe9aeeb2ed4dfa76fd2e2d5c4d6e4fe6\",\r\n        \"result\": \"lF2ZpwzIkQigrNMlDe9egr1LNbF4VfAe76pRqj93k0z22VJ3O+uI3hbUM2SLecoi12pBwKEGKub0aMONy7zQDQ==\"\r\n      }\r\n    ]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cardnet.ldg-stg.one/api/wallets",
+							"protocol": "https",
+							"host": [
+								"cardnet",
+								"ldg-stg",
+								"one"
+							],
+							"path": [
+								"api",
+								"wallets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
