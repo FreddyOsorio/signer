@@ -9,7 +9,7 @@ const {secretRaw, publicRaw, hashInterno, resultInterno} = {
   publicDer: "302a300506032b657003210087f7564e7679d50ab8d154cfc05d9468ae4be317ad8b62eb4778fbad7a07afec", 
   hashInterno: "4f2cf8a041c056fae71ca6b1e88bb5a10ce4bba29aaea1ba73ff77450df42e70",
   resultInterno: "Ds0y0RCKn6g8RbGC1+DvDOJiiwzEqH9VTOwZDiij3xRcecALimavSOoKGOmgDL46M41HTbq+d9bnR8wAQC2PDA=="
-}
+} 
 
 const request = {
     handle: "cre_p1_qwerty",
